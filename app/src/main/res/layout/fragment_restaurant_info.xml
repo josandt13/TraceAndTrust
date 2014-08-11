@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.traceandtrust.RestaurantInfoFragment"
+    android:background="#ff168698">
+
+    <LinearLayout
+        android:id="@+id/layoutForTitle"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center_horizontal"
+            android:textStyle="bold|italic"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="225dp"
+        android:id="@+id/restaurantImageView"
+        android:layout_below="@+id/layoutForTitle"
+        android:scaleType="fitXY"
+        android:background="#ffffffff" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurantImageView"
+        android:id="@+id/linearLayout"
+        android:background="#ff252525">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/facebookRestaurantButton"
+            android:id="@+id/restaurantButtonFB"
+            android:textColor="#ffffffff"
+            android:layout_weight="1"
+            android:clickable="true"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#ffafafaf"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/webRestaurantButton"
+            android:id="@+id/restaurantButtonWeb"
+            android:textColor="#ffffffff"
+            android:layout_weight="1"
+            android:clickable="true"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:clickable="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="#ff168698">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#ffafafaf" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDescription"
+                android:background="#ff168698"
+                android:textColor="#ffffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/favorite_button"
+        android:src="@android:drawable/btn_star"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/restaurantImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLocation"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:alpha=".75" />
+
+
+</RelativeLayout>

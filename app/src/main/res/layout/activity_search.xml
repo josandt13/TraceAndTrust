@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+    tools:context="com.traceandtrust.searchActivity"
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/productCategory"
+            android:id="@+id/textView5"
+            android:layout_weight="1"
+            android:textColor="#ffffffff"
+            android:singleLine="false"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffb8b8b8" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerProductCategory"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/productCategory"
+            android:contentDescription="@string/productCategory"
+            android:dropDownWidth="match_parent"
+            android:popupBackground="#ff168698"
+            android:layout_weight="2" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/productPrompt"
+            android:id="@+id/textView6"
+            android:layout_weight="1"
+            android:textColor="#ff168698"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffb8b8b8" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerProduct"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/productPrompt"
+            android:layout_weight="2"
+            android:popupBackground="#ff168698" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/farmOrVesselPrompt"
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:textColor="#ff168698"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffb8b8b8" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerFarmOrVessel"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/farmOrVesselPrompt"
+            android:layout_weight="2"
+            android:popupBackground="#ff168698" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/harvestLocationPrompt"
+            android:id="@+id/textView10"
+            android:layout_weight="1"
+            android:textColor="#ff168698"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffb8b8b8" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerHarvestLocation"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/harvestLocationPrompt"
+            android:layout_weight="2"
+            android:popupBackground="#ff168698" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/associationsPrompt"
+            android:id="@+id/textView11"
+            android:layout_weight="1"
+            android:textColor="#ff168698"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffb8b8b8" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerAssociations"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/associationsPrompt"
+            android:layout_weight="2"
+            android:popupBackground="#ff168698" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/products_harvested"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textColor="#ff168698"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffb8b8b8" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerWithinMiles"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/withinmiles"
+        android:layout_weight="2"
+        android:popupBackground="#ff168698" />
+
+</LinearLayout>
+

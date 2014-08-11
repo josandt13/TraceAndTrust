@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/reset"
+        android:title="@string/reset"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/results"
+        android:title="@string/listView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search_icon"
+        android:title="@string/searchTitle"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/save"
+        android:title="@string/save"
+        app:showAsAction="always" />
+
+</menu>

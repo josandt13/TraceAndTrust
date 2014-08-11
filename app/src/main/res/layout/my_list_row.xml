@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:drawable/divider_horizontal_textfield">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/productCategory"
+            android:id="@+id/textView5"
+            android:textStyle="bold"
+            android:textColor="#FF000000"
+            android:singleLine="false"
+            android:background="#ffffffff"
+            android:gravity="left" />
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerProductCategory"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/productCategory"
+        android:contentDescription="@string/productCategory"
+        android:dropDownWidth="match_parent"
+        android:popupBackground="#ff168698" />
+
+</LinearLayout>
+
